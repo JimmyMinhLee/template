@@ -9,6 +9,16 @@ import {
 import { Heading, Text } from '@chakra-ui/react';
 
 const InformationCard = props => {
+  const {
+    firstName,
+    lastName,
+    dateOfBirth,
+    email,
+    phoneNumber,
+    checkIn,
+    checkOut,
+    memberNumber,
+  } = props;
   const memberNameGrid = (
     <SimpleGrid columns={3} columnGap={2} rowGap={6} width={'full'}>
       <GridItem colSpan={1}>
@@ -17,7 +27,7 @@ const InformationCard = props => {
           textDecoration={'underline'}
           textUnderlineOffset={2}
         >
-          John
+          {firstName}
         </Text>
         <Heading fontSize={'sm'}> First Name </Heading>
       </GridItem>
@@ -27,7 +37,7 @@ const InformationCard = props => {
           textDecoration={'underline'}
           textUnderlineOffset={2}
         >
-          Doe
+          {lastName}
         </Text>
         <Heading fontSize={'sm'}> Last Name </Heading>
       </GridItem>
@@ -42,7 +52,7 @@ const InformationCard = props => {
           textDecoration={'underline'}
           textUnderlineOffset={2}
         >
-          1234-56-78
+          {dateOfBirth}
         </Text>
         <Heading fontSize={'sm'}> Date of Birth </Heading>
       </GridItem>
@@ -52,7 +62,7 @@ const InformationCard = props => {
           textDecoration={'underline'}
           textUnderlineOffset={2}
         >
-          JohnDoe@Gmail.com
+          {email}
         </Text>
         <Heading fontSize={'sm'}> Email </Heading>
       </GridItem>
@@ -62,7 +72,7 @@ const InformationCard = props => {
           textDecoration={'underline'}
           textUnderlineOffset={2}
         >
-          123-456-7890
+          {phoneNumber}
         </Text>
         <Heading fontSize={'sm'}> Phone Number </Heading>
       </GridItem>
@@ -73,7 +83,7 @@ const InformationCard = props => {
           textDecoration={'underline'}
           textUnderlineOffset={2}
         >
-          1234-56-78
+          {checkIn}
         </Text>
         <Heading fontSize={'sm'}> Check In </Heading>
       </GridItem>
@@ -83,7 +93,7 @@ const InformationCard = props => {
           textDecoration={'underline'}
           textUnderlineOffset={2}
         >
-          1234-56-78
+          {checkOut}
         </Text>
         <Heading fontSize={'sm'}> Check Out </Heading>
       </GridItem>
@@ -93,7 +103,7 @@ const InformationCard = props => {
           textDecoration={'underline'}
           textUnderlineOffset={2}
         >
-          123-456-7890
+          {memberNumber}
         </Text>
         <Heading fontSize={'sm'}> Member Number </Heading>
       </GridItem>

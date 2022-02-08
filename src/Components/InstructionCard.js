@@ -7,19 +7,7 @@ import ImmunizationStatus from '../Components/ImmunizationStatus';
 const InstructionCard = props => {
   // Some API call to get the data (or pass it through props)
 
-  const ImmunizationStatusProps = {
-    recordedDate: 'some_data',
-    occurrence: 'some_data',
-    instructions: 'some_data',
-  };
-
-  const PCRStatusProps = {
-    instructions: 'some_data',
-    result: 'some_data',
-    samplingDate: 'some_data',
-    testDate: 'some_data',
-    issueDate: 'some_data',
-  };
+  const { ImmunizationStatusProps, PCRStatusProps } = props;
 
   const companyLogo = (
     <>
