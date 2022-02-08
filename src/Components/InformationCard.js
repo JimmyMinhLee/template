@@ -5,8 +5,10 @@ import {
   VStack,
   Divider,
   HStack,
+  Image,
 } from '@chakra-ui/react';
 import { Heading, Text } from '@chakra-ui/react';
+import PlaceholderImage from '../Images/Placeholder.png';
 
 const InformationCard = props => {
   const {
@@ -41,6 +43,13 @@ const InformationCard = props => {
         </Text>
         <Heading fontSize={'sm'}> Last Name </Heading>
       </GridItem>
+    </SimpleGrid>
+  );
+
+  const imageGrid = (
+    <SimpleGrid columns={2} rowGap={2} width="full" spacing={2}>
+      <Image src={PlaceholderImage}></Image>
+      <Image src={PlaceholderImage}></Image>
     </SimpleGrid>
   );
 
@@ -136,6 +145,7 @@ const InformationCard = props => {
       {companyLogo}
       {memberNameGrid}
       {memberInformationGrid}
+      {imageGrid}
     </VStack>
   );
 };

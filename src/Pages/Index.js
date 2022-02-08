@@ -37,7 +37,7 @@ const Index = () => {
 
   return (
     <Container maxW={'container.xl'} p={0}>
-      <Flex h="100vh" py={20}>
+      <Flex py={20}>
         <InformationCard {...InformationCardProps} />
         <InstructionCard {...InstructionCardProps} />
       </Flex>

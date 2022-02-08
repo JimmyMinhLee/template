@@ -19,7 +19,7 @@ function NavigationBar() {
       position="static"
     >
       <Heading p={4}>
-        <Text> Grand Prince Hotel, Takanawa (Mockup) </Text>
+        <Text> Grand Prince Hotel, Takanawa (Placeholder) </Text>
       </Heading>
       <HStack as="nav" spacing="6">
         <Box>
